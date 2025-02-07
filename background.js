@@ -16,7 +16,7 @@ function startAutoRefresh() {
         chrome.tabs.reload(tab.id);  // Reload each tab
       });
     });
-  }, 30000); // 30000 ms = 30 seconds
+  }, 10000); // 30000 ms = 30 seconds
 }
 
 chrome.runtime.onSuspend.addListener(() => {
